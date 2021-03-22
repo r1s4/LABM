@@ -9,6 +9,11 @@ interface UserDao {
     @Query("SELECT * FROM user")
     fun getAll(): List<User>
 
+    //username -> user
+    @Query("SELECT * FROM user WHERE name = :username")
+    fun getFromNAME(username: String): User
+
+
     //追加
     @Insert
     fun insert(user: User)
