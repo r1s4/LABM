@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalculationActivity">
+    tools:context="CalculationActivity">
 
 
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,8 +28,22 @@
                 android:layout_height="85dp"
                 android:layout_weight="1"
                 android:gravity="right"
-                android:text=""
+                android:text="@+string/formula_text"
                 android:textSize="30sp" />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/enter"
+                android:layout_width="70dp"
+                android:layout_height="77dp"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="24dp"
+                android:textSize="18sp"
+                app:bootstrapBrand="info"
+                app:bootstrapSize="md"
+                app:bootstrapText="ENTER"
+                app:buttonMode="regular"
+                app:roundedCorners="true"
+                app:showOutline="false" />
         </TableRow>
 
         <TableRow
